@@ -1,0 +1,24 @@
+======================
+    COMANDOS HEROKU   
+======================
+heroku config:set MONGO_URI="XXXXXXX"
+heroku config:get nombre
+heroku config:unset nombre
+heroku config:set nombre="Fernando"
+
+======================
+    COMANDOS GIT
+======================
+git status
+git add .
+git commit -m "mensaje"
+git commit -am "mensaje"
+git push
+git push origin master
+git push heroku master
+
+======================
+    COMANDOS TAGS
+======================
+git tag -a vX.X.X -m "mensaje"
+git push --tags
