@@ -41,6 +41,11 @@ app.get("/usuarios", verificaToken, (req, res) => {
         });
 });
 
+//============================================
+// Crea usuario sin validar
+// app.post("/usuarios", (req, res) => {
+//============================================
+
 app.post("/usuarios", [verificaToken, verificaAdmin_Role], (req, res) => {
     let body = req.body;
 
